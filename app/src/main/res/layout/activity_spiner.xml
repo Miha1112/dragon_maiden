@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bakc_to_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backToMenu_sp"
+        android:src="@drawable/back_menu" />
+
+    <ImageView
+        android:id="@+id/ruller_1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/bakc_to_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ruller_2" />
+
+    <ImageView
+        android:id="@+id/ruller_2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ruller_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ruller_2" />
+
+    <ImageView
+        android:id="@+id/ruller_3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ruller_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ruller_2" />
+
+    <TextView
+        android:id="@+id/rezult_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="446dp"
+        android:layout_toEndOf="@+id/ruller_2"
+        android:text="Result" />
+
+    <TextView
+        android:id="@+id/rezult_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="295dp"
+        android:layout_toEndOf="@+id/ruller_3"
+        android:text="Result" />
+
+    <TextView
+        android:id="@+id/rezult_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="596dp"
+        android:layout_toEndOf="@+id/ruller_1"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/spinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClickStart"
+        android:text="@string/Spin" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/spinBtn">
+
+        <ImageView
+            android:id="@+id/add_baraban"
+            android:layout_width="66dp"
+            android:layout_height="57dp"
+            android:onClick="addBaraban"
+            android:src="@drawable/add_baraban_skin" />
+
+    <ImageView
+        android:id="@+id/remove_baraban"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_toEndOf="@+id/add_baraban"
+        android:layout_marginStart="20dp"
+        android:onClick="removeBaraban"
+        android:src="@drawable/remove_baraban_skin"
+
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/active_baraban_count"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/ruller_3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="138dp"
+        android:text="Now active 3 roulette" />
+
+    <TextView
+        android:id="@+id/total_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="500" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/total_score"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/point" />
+
+
+</RelativeLayout>
